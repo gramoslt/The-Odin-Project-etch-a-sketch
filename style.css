@@ -1,0 +1,15 @@
+#grid {
+    display: flex;
+    flex-wrap: wrap;
+    width:256rem
+}
+
+.square {
+    flex: 1;
+    background-color: aliceblue;
+    border: 1px solid black;
+    min-width: 16px;
+    min-height: 16px;
+    max-width: 1rem;
+    max-width: 1rem;
+}
