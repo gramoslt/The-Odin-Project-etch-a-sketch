@@ -10,7 +10,17 @@ function generateSquares(squaresPerSide) {
         square.style.width = `${squareSide}%`;
         square.style.height = `${squareSide}%`;
         square.addEventListener("mouseover", () => {
-            square.style.backgroundColor = getRandomColor();
+            if (square.style.backgroundColor) {
+                let currentOpacity = square.style.opacity;
+                console.log(currentOpacity);
+                if (currentOpacity <= 0) {
+                    currentOpacity = 1.1;
+                }
+                square.style.opacity = currentOpacity - 0.1;
+            } else {
+                square.style.backgroundColor = getRandomColor();
+                square.style.opacity = 1;
+            }
         });
         grid.appendChild(square);
     }
