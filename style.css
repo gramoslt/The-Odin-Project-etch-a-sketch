@@ -1,15 +1,13 @@
 #grid {
     display: flex;
     flex-wrap: wrap;
-    width: 800px;;
-    height: 800px;;
+    width: 960px;;
+    height: 960px;;
     border: 1px solid black;
 }
 
 .square {
     background-color: white;
     border: 1px solid lightgray;
-    width: calc(100% / 16);
-    height: calc(100% / 16);
     box-sizing: border-box;
 }
